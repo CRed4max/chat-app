@@ -5,7 +5,9 @@
     max-width: 728px;
     margin: 0 auto;
   }
-  
+  .home h2{
+    color:white;
+  }
   .home header {
     background-color: #18684d;
     height: 10vh;

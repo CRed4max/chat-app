@@ -5,6 +5,8 @@ import { Home } from './components/Home';
 import Chatroom from './components/Chatroom';
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import { Join } from './components/Join';
+import { Login } from './components/Login';
+import { Create } from './components/Create';
 
 
 function App() {
@@ -13,16 +15,19 @@ function App() {
     <BrowserRouter>
     <Switch>
       <Route exact path="/">
-        rekkrejkl
+        <Login></Login>
       </Route>
       <Route exact path="/home">
         <Home/>
       </Route>  
-      <Route exact path="/about/:groupId">
+      <Route exact path="/about/:groupId/:groupName/:password">
         <Chatroom></Chatroom>
       </Route>  
       <Route exact path="/join">
         <Join></Join>
+      </Route> 
+      <Route exact path="/create">
+        <Create></Create>
       </Route> 
     </Switch>
     </BrowserRouter>
